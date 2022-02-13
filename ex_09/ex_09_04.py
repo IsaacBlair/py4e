@@ -25,4 +25,4 @@ for word, count in counts.items() :
         bigword = word
 
 
-print(word, bigcount)
+print(bigword, bigcount)
