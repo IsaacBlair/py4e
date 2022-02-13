@@ -16,4 +16,13 @@ for line in file :
         day = words[1]
         counts[day] = counts.get(day, 0) + 1
 
-print(counts)
+bigcount = None
+bigword = None
+
+for word, count in counts.items() :
+    if bigcount is None or bigcount < count :
+        bigcount = count
+        bigword = word
+
+
+print(word, bigcount)
